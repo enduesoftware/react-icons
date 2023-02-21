@@ -1,7 +1,7 @@
 {
   "name": "react-icons_builders",
   "private": true,
-  "version": "4.7.1",
+  "version": "4.7.3",
   "description": "SVG React icons of popular icon packs using ES6 imports",
   "author": "Goran Gajic",
   "contributors": [
@@ -13,12 +13,12 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:react-icons/react-icons.git"
+    "url": "git+ssh://git@github.com:enduesoftware/react-icons.git"
   },
   "bugs": {
-    "url": "https://github.com/react-icons/react-icons/issues"
+    "url": "https://github.com/enduesoftware/react-icons/issues"
   },
-  "homepage": "https://github.com/react-icons/react-icons#readme",
+  "homepage": "https://github.com/enduesoftware/react-icons#readme",
   "peerDependencies": {
     "react": "*"
   },
@@ -47,5 +47,8 @@
     "ts": "node -r esbuild-register",
     "build": "yarn ts ./scripts/build.ts",
     "fetch": "yarn ts ./scripts/fetcher.ts"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

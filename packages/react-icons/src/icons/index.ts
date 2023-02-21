@@ -679,4 +679,28 @@ export const icons: IconDefinition[] = [
       hash: "237cd76c007a573c2a6f6caabe9ea3de81393f50",
     },
   },
+  {
+    id: "ui",
+    name: "UntitledUI Icons",
+    contents: [
+      {
+        files: path.resolve(
+            __dirname,
+            "../../icons/untitledui-icons/icons/*.svg"
+        ),
+        formatter: (name) => `Ui${camelcase(name, { pascalCase: true })}`,
+      },
+    ],
+    projectUrl: "https://www.untitledui.com",
+    license: "Commercial",
+    licenseUrl: "https://www.untitledui.com/legal/license",
+    source: {
+      type: "git",
+      localName: "untitledui-icons",
+      remoteDir: "icons/",
+      url: "git@github.com:enduesoftware/untitledui-icons.git",
+      branch: "main",
+      hash: "99de5e3c0d731d5006e5366e6439c029fb12ee84",
+    },
+  },
 ];
